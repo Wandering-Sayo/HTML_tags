@@ -14,60 +14,83 @@
 <body>
     <h1>Etiquetas</h1>
     <p>Vamos a ver ejemplos de <b>etiquetas</b> usadas en <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+    <!--Lista ordenada de links-->
     <h3>Referencias</h3>
-    <!--Lista de links-->
-    <ul>
-        <li><a href="http://www.w3schools.com/html/" >w3schools</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/Learn/HTML" >Mozilla Developer Network</a></li>
-        <li><a href="http://htmldog.com/guides/html/beginner/" >HTMLdog</a></li>
-    </ul>
+    
+    <!-- Menú de navegación a links externos (+lista ordenada) -->
+    <nav>	
+	<ol>
+          <li><a href="http://www.w3schools.com/html/" >w3schools</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/Learn/HTML" >Mozilla Developer Network</a></li>
+          <li><a href="http://htmldog.com/guides/html/beginner/" >HTMLdog</a></li>
+    	</ol>
+     </nav>
+
+    <!-- Menú de navegación dentro del mismo archivo index (+lista no ordenada) -->
+    <nav>
+	<h2>Tipos de etiquetas exploradas en este projecto</h2>
+	<ul>
+	  <li><a href="#mapa" target="_self">Mapa</a></li>
+	  <li><a href="#articulo" target="_self">Artículo</a></li>
+	  <li><a href="#audio"  target="_self">Audio</a></li>
+	  <li><a href="#break" target="_self">Break</a></li>
+	  <li><a href="#tabla" target="_self">tabla</a></li>
+	</ul>
+    </nav>
 
     <!--Mapa clickeable-->
-    <h3>Mapa de etiquetas básicas</h3>
-    <p>Click sobre las etiquetas de la imagen para más información</p>
-    <img src="img/mapa.jpg" width="240" height="236" alt="Mapa Base" usemap="#tagsmap">
+    <div id="mapa">
+      <h3>Mapa de etiquetas básicas</h3>
+      <p>Click sobre las etiquetas de la imagen para más información</p>
+      <img src="img/mapa.jpg" width="240" height="236" alt="Mapa de etiquetas básicas" usemap="#tagsmap">
 
-    <map name="tagsmap">
-        <area shape="rect" coords="25,14,136,31" href="https://www.w3schools.com/tags/tag_doctype.asp" alt="DOCTYPE">
-        <area shape="rect" coords="25,34,71,46" href="https://www.w3schools.com/tags/tag_html.asp" alt="html">
-        <area shape="rect" coords="25,205,76,220" href="https://www.w3schools.com/tags/tag_html.asp" alt="html">
-        <area shape="rect" coords="25,50,76,66" href="https://www.w3schools.com/tags/tag_head.asp" alt="head">
-        <area shape="rect" coords="25,106,76,118" href="https://www.w3schools.com/tags/tag_head.asp" alt="head">
-        <area shape="rect" coords="56,87,211,104" href="https://www.w3schools.com/tags/tag_title.asp" alt="title">
-        <area shape="rect" coords="25,123,71,138" href="https://www.w3schools.com/tags/tag_body.asp" alt="body">
-        <area shape="rect" coords="25,185,76,200" href="https://www.w3schools.com/tags/tag_body.asp" alt="body">
-    </map>
+      <map name="tagsmap">
+          <area shape="rect" coords="25,14,136,31" href="https://www.w3schools.com/tags/tag_doctype.asp" alt="DOCTYPE">
+          <area shape="rect" coords="25,34,71,46" href="https://www.w3schools.com/tags/tag_html.asp" alt="html">
+          <area shape="rect" coords="25,205,76,220" href="https://www.w3schools.com/tags/tag_html.asp" alt="html">
+          <area shape="rect" coords="25,50,76,66" href="https://www.w3schools.com/tags/tag_head.asp" alt="head">
+          <area shape="rect" coords="25,106,76,118" href="https://www.w3schools.com/tags/tag_head.asp" alt="head">
+          <area shape="rect" coords="56,87,211,104" href="https://www.w3schools.com/tags/tag_title.asp" alt="title">
+          <area shape="rect" coords="25,123,71,138" href="https://www.w3schools.com/tags/tag_body.asp" alt="body">
+          <area shape="rect" coords="25,185,76,200" href="https://www.w3schools.com/tags/tag_body.asp" alt="body">
+      </map>
+    </div>
 
     <!--Artículo con aside y de paso abreviaciones-->
-    <h3>Artículo</h3>
-    <article>
-        <h2>Etiquetas HTML</h2>
-        <p>Si se observa el código de una página web (sencillamente escogiendo en el menú del navegador «Ver -> Código fuente»), se encontrará con los paréntesis angulares < > (los símbolos "menor que" y "mayor que", que enmarcan habitualmente la etiqueta de apertura o inicio, y </ >, que acotan la etiqueta de cierre o final). Lo que hay entre las etiquetas suele ser el texto que se puede ver directamente en pantalla. Las etiquetas simplemente dan las órdenes que indican:</p>
-            <aside>
-                <h4><abbr title="Hypertext Markup Language">HTML</abbr></h4>
-                <p>Sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.</p>
-            </aside>
-    </article>
+    <div id="articulo">
+      <h3>Artículo</h3>
+      <article>
+          <h2>Etiquetas HTML</h2>
+          <p>Si se observa el código de una página web (sencillamente escogiendo en el menú del navegador «Ver -> Código fuente»), se encontrará con los paréntesis angulares < > (los símbolos "menor que" y "mayor que", que enmarcan habitualmente la etiqueta de apertura o inicio, y </ >, que acotan la etiqueta de cierre o final). Lo que hay entre las etiquetas suele ser el texto que se puede ver directamente en pantalla. Las etiquetas simplemente dan las órdenes que indican:</p>
+              <aside>
+                  <h4><abbr title="Hypertext Markup Language">HTML</abbr></h4>
+                  <p>Sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web.</p>
+              </aside>
+      </article>
+    </div>
 
     <!--Insertar audios-->
-    <h3>Algo para escuchar</h3>
-    <audio controls>
+    <div id="audio">
+      <h3>Algo para escuchar</h3>
+      <audio controls>
             <source src="media/song.mp3" type="audio/mpeg">
-    </audio>
+      </audio>
+    </div>
 
-    <!--Esta no la entiendo-->
+
+    <!--Sirve para los lenguajes que se escriben de derecha a izquierda
     <h3>BDI</h3>
     <p>Probando por ejemplo con <bdi>日本語</bdi></p>
-    <p>Si no lo uso aparece 日本語???</p>
+    <p>Si no lo uso aparece 日本語???</p> -->
 
     <!--Divs y breaks-->
-    <div style="color:brown">
+    <div id="break" style="color:brown">
         <h3>Give me break</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
             Quisque mattis ligula at scelerisque blandit.<br>
             In vulputate ligula in ipsum laoreet scelerisque.<br>
-            Ut pulvinar odio non molestie scelerisque.
-            <div style="color:blueviolet">Pellentesque venenatis iaculis lacinia.</div>
+            Ut pulvinar odio non molestie scelerisque.<br>
+            Pellentesque venenatis iaculis lacinia.<br>
             Praesent lorem risus, dignissim ac sem eu, faucibus pharetra felis.<br>
             Maecenas vitae suscipit ipsum, a commodo nibh.<br>
             
@@ -75,6 +98,7 @@
     </div>
 
     <!--Tabla y cambio de estilo por columnas-->
+    <div id="tabla">
     <table>
         <h3>Tabla de etiquetas usadas hasta ahora</h3>
         <colgroup>
@@ -89,15 +113,40 @@
             <th>Etc.</th>
         </tr>
         <tr>
-            <th>Párrafo</th>
-            <th>Lista sin ordenar</th>
-            <th>Elementos de la lista</th>
-            <th>Imagen</th>
-            <th>Me cansé</th>
+            <td>Párrafo</td>
+            <td>Lista sin ordenar</td>
+            <td>Elementos de la lista</td>
+            <td>Imagen</td>
+            <td>Me cansé</td>
         </tr>
     </table>
+    </div>
 
+    <!-- Formulario con imput, lista desplegable, checkbox -->
+    <h3> Formulario de registro </h3>
+    <form>
+        Nombre: <input type="text" placeholder="Ingrese nombre..." required> 
+        Mail: <input type="email" placeholder="Ingrese email..." required> <br>
+        Tipo y número de documento
+        <select>
+            <option value="dni">DNI</option>
+            <option value="ci">CI</option>
+            <option value="le">LE</option>
+            <option value="lc">LC</option>
+        </select>
+        <input type="int" placeholder="Ingrese número de documento..." required> <br>
+        <br>
+        Especie:
+            Humano: <input type="radio" value="Humano">
+            Animal: <input type="radio" value="Animal">
+            Vegetal: <input type="radio" value="Vegetal">
+            Alien: <input type="radio" value="Alien">
+    </form>
+  
+    
     <!--Footer solo para probar la etiqueta address-->
+    <br>
+    <br>
     <footer>
         <address>
             Esta ensalada de etiquetas es cortesía de <a href="mailto:yo@mail.com">Sabrina Viloria</a>
