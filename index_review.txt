@@ -126,6 +126,13 @@
     <br>
     <br>
     <footer>
+    	<h3> Se reciben críticas </h3>
+    	<form>
+       	  Nombre: <input type="text" placeholder="Ingrese nombre..." required>
+          Mail: <input type="email" placeholder="Ingrese email..." required>
+          Mensaje: <textarea maxlength="30" placeholder="Escriba aquí"></textarea>
+          <input type="submit">
+   	</form>
         <address>
             Esta ensalada de etiquetas es cortesía de <a href="mailto:yo@mail.com">Sabrina Viloria</a>
         </address>
